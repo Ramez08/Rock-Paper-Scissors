@@ -1,0 +1,145 @@
+body {
+  background-color: #0093E9; /* Set the background color of the body */
+  background-image: linear-gradient(90deg, #0093E9 0%, #80D0C7 100%); /* Set a linear gradient background image */
+}
+
+.selections {
+  display: flex; /* Use flexbox to arrange the elements horizontally */
+  justify-content: center; /* Center the elements horizontally within the flex container */
+}
+
+.selection {
+  background: none; /* Remove the background */
+  border: none; /* Remove the border */
+  outline: none; /* Remove the outline */
+  cursor: pointer; /* Set the cursor to a pointer */
+  font-size: 2rem; /* Set the font size */
+  transition: 100ms; /* Apply a transition effect with a duration of 100 milliseconds */
+}
+
+.selection:hover {
+  transform: scale(1.2); /* Scale up the element on hover */
+}
+
+.results {
+  margin-top: 1rem; /* Set the top margin */
+  display: grid; /* Use grid layout for the elements */
+  justify-content: center; /* Center the elements horizontally within the grid container */
+  grid-template-columns: repeat(2, 1fr); /* Create a grid with two equal-width columns */
+  justify-items: center; /* Center the items within the grid cells horizontally */
+  align-items: center; /* Center the items within the grid cells vertically */
+  color: white; /* Set the text color */
+  font-size: 1.15rem; /* Set the font size */
+}
+
+.result-score {
+  margin-left: .1rem; /* Set the left margin */
+  font-size: 1rem; /* Set the font size */
+  color: white; /* Set the text color */
+}
+
+.result-selection {
+  opacity: .5; /* Set the opacity to 0.5 */
+  font-size: 1.5rem; /* Set the font size */
+}
+
+.result-selection.winner {
+  opacity: 1; /* Set the opacity to 1 */
+  font-size: 2rem; /* Set the font size */
+}
+
+.test {
+  text-align: center; /* Center align the text */
+  padding-top: 30px; /* Set the top padding */
+  padding-bottom: -100px; /* Set the bottom padding with a negative value (effect may vary depending on the context) */
+  font-size: 1.1rem; /* Set the font size */
+}
+
+.draw {
+  text-align: center; /* Center align the text */
+  padding-top: 30px; /* Set the top padding */
+  padding-bottom: -100px; /* Set the bottom padding with a negative value (effect may vary depending on the context) */
+  position: relative; /* Set the position to relative */
+  color: white; /* Set the text color */
+  font-size: 1.15rem; /* Set the font size */
+}
+
+.title {
+  text-align: center; /* Center align the text */
+  font-family: "Arial"; /* Set the font family */
+  margin-top: -10px; /* Set the top margin */
+  color: white; /* Set the text color */
+}
+
+.selector {
+  text-align: center; /* Center align the text */
+  font-family: "Arial"; /* Set the font family */
+  color: white; /* Set the text color */
+}
+
+.rules {
+  font-family: "Arial"; /* Set the font family */
+  position: absolute; /* Set the position to absolute */
+  top: 0; /* Position the element at the top */
+  left: 0; /* Position the element at the left */
+  margin-left: 35.5px; /* Set the left margin */
+  display: block; /* Display the element as a block */
+  margin-top: 10px; /* Set the top margin (adjust as needed) */
+  color: white; /* Set the text color */
+}
+
+.test {
+  position: relative; /* Set the position to relative */
+  color: white; /* Set the text color */
+}
+
+.test {
+  position: relative; /* Set the position to relative */
+}
+
+.top-left {
+  position: absolute; /* Set the position to absolute */
+  top: 0; /* Position the element at the top */
+  left: 0; /* Position the element at the left */
+  margin-left: 10px; /* Set the left margin */
+  display: block; /* Display the element as a block */
+  margin-top: 10px; /* Set the top margin (adjust as needed) */
+  font-family: "Arial"; /* Set the font family */
+}
+
+.top-left:nth-child(2) {
+  top: 25px; /* Position the element at a specific top value (adjust as needed) */
+}
+
+.top-left:nth-child(3) {
+  top: 60px; /* Position the element at a specific top value (adjust as needed) */
+}
+
+.top-left:nth-child(4) {
+  top: 95px; /* Position the element at a specific top value (adjust as needed) */
+}
+
+.top-left:nth-child(5) {
+  top: 130px; /* Position the element at a specific top value (adjust as needed) */
+}
+
+.top-left:nth-child(6) {
+  top: 165px; /* Position the element at a specific top value (adjust as needed) */
+}
+
+.top-left:nth-child(7) {
+  top: 200px; /* Position the element at a specific top value (adjust as needed) */
+}
+
+.emoji {
+  display: inline-block; /* Display the element as an inline-block */
+  margin-right: -25px; /* Set the right margin with a negative value (adjust as needed) */
+  margin-left: 25px; /* Set the left margin */
+  font-size: 1.3rem; /* Set the font size */
+}
+
+.signature{
+ text-align: right; /* Right align the text */
+ color: white; /* Set the text color */
+ font-family: "Arial"; /* Set the font family */
+}

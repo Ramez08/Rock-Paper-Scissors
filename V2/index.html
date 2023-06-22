@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Rock Paper Sicssors</title> <!-- Title of the HTML document -->
+  <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+  <link rel="shortcut icon" type="x-icon" href="https://cdn-icons-png.flaticon.com/512/6851/6851302.png"> <!-- Link to a favicon image -->
+  <script src="script.js" defer></script> <!-- Link to an external JavaScript file with the "defer" attribute -->
+</head>
+<body>
+  <div class="test">
+    <h3 class="rules">Rules</h3> <!-- Heading for the game rules -->
+    <p class="top-left">
+      <span class="emoji">✊   |</span> <!-- Rock emoji -->
+      <span class="emoji" style="opacity: 0.7;"> ✌</span> <!-- Scissors emoji with reduced opacity -->
+    </p>
+    <p class="top-left">Rock Beats Scissors</p> <!-- Explanation of the rule: Rock beats Scissors -->
+    <p class="top-left">
+        <span class="emoji">✌   |</span> <!-- Scissors emoji -->
+        <span class="emoji" style="opacity: 0.7;">✋</span> <!-- Paper emoji with reduced opacity -->
+    </p>
+    <p class="top-left">Scissors Beats Paper</p> <!-- Explanation of the rule: Scissors beats Paper -->
+    <p class="top-left">
+        <span class="emoji">✋   |</span> <!-- Paper emoji -->
+        <span class="emoji" style="opacity: 0.7;">✊</span> <!-- Rock emoji with reduced opacity -->
+    </p>
+    <p class="top-left">Paper Beats Rock</p> <!-- Explanation of the rule: Paper beats Rock -->
+  </div>
+  <h1 class="title">Rock Paper Sicssors</h1> <!-- Main title of the game -->
+  <h2 class="selector">Choose</h2> <!-- Heading for player's selection -->
+  <div class="selections">
+    <button class="selection" data-selection="rock">✊</button> <!-- Button for selecting Rock -->
+    <button class="selection" data-selection="paper">✋</button> <!-- Button for selecting Paper -->
+    <button class="selection" data-selection="scissors">✌</button> <!-- Button for selecting Scissors -->
+  </div>
+  <div class="draw">
+    Draw <span class="result-score" data-draw-count>0</span> <!-- Text indicating the number of draws -->
+  </div> 
+  <div class="results">
+    <div>
+      You
+      <span class="result-score" data-your-score>0</span> <!-- Text indicating the player's score -->
+    </div>
+    <div data-final-column>
+      Computer
+      <span class="result-score" data-computer-score>0</span> <!-- Text indicating the computer's score -->
+    </div>
+   
+    <!--
+    <div class="result-selection winner">✊</div>
+    <div class="result-selection">✌</div>
+    -->
+    <!--
+    The above lines seem to be commented out. They might represent the result selections, such as the player's and computer's choices.
+    -->
+  </div>
+  <h6 class="signature">Ramez Ibrahim</h6> <!-- Signature of the creator of the game -->
+</body>
+</html>
