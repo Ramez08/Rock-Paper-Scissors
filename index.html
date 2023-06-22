@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Linking an external CSS file -->
+  <script src="script.js" defer></script> <!-- Linking an external JavaScript file and deferring its execution -->
+</head>
+<body>
+  <div class="selections">
+    <button class="selection" data-selection="rock">✊</button> <!-- Button for rock selection -->
+    <button class="selection" data-selection="paper">✋</button> <!-- Button for paper selection -->
+    <button class="selection" data-selection="scissors">✌</button> <!-- Button for scissors selection -->
+  </div>
+  <div class="results">
+    <div>
+      You
+      <span class="result-score" data-your-score>0</span> <!-- Span to display the score of the player -->
+    </div>
+    <div data-final-column>
+      Computer
+      <span class="result-score" data-computer-score>0</span> <!-- Span to display the score of the computer -->
+    </div>
+    <!-- The following two div elements are commented out -->
+    <!-- <div class="result-selection winner">✊</div> -->
+    <!-- <div class="result-selection">✌</div> -->
+  </div>
+</body>
+</html>

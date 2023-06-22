@@ -1,0 +1,45 @@
+body {
+  background-color: #CCC; /* Setting the background color of the body */
+}
+
+.selections {
+  display: flex; /* Using flexbox to display the selections horizontally */
+  justify-content: center; /* Centering the selections horizontally within the container */
+}
+
+.selection {
+  background: none; /* Removing the background */
+  border: none; /* Removing the border */
+  outline: none; /* Removing the outline */
+  cursor: pointer; /* Changing the cursor to a pointer on hover */
+  font-size: 2rem; /* Setting the font size of the selection buttons */
+  transition: 100ms; /* Adding a smooth transition effect with a duration of 100 milliseconds */
+}
+
+.selection:hover {
+  transform: scale(1.2); /* Scaling the selection button to 1.2 times its original size on hover */
+}
+
+.results {
+  margin-top: 1rem; /* Adding a top margin of 1rem to the results container */
+  display: grid; /* Using CSS grid for the layout of the results */
+  justify-content: center; /* Centering the content horizontally within the container */
+  grid-template-columns: repeat(2, 1fr); /* Creating two equal-width columns in the grid */
+  justify-items: center; /* Centering the items horizontally within each grid cell */
+  align-items: center; /* Centering the items vertically within each grid cell */
+}
+
+.result-score {
+  margin-left: .1rem; /* Adding a left margin of .1rem to the result score */
+  font-size: .5rem; /* Setting the font size of the result score */
+  color: #333; /* Setting the color of the result score */
+}
+
+.result-selection {
+  opacity: .5; /* Setting the opacity of the result selection to .5 */
+}
+
+.result-selection.winner {
+  opacity: 1; /* Setting the opacity of the winning result selection to 1 */
+  font-size: 1.5rem; /* Setting the font size of the winning result selection */
+}
